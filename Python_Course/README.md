@@ -93,3 +93,37 @@ Hello Alok
 ```
 >[!Note]
 >If taking input, the input's default type would be **string.**
+
+```
+print("Hello, type your name here:")
+n=input()
+print("Which place are you from?")
+p = input()
+print("Hello!", n, "How is the weather in", p,"?")
+print("What is your age?")
+age = int(input())
+print("Good to know you are", age, " years old")
+```
+**Output:**
+```
+Hello, type your name here:
+Alok
+Which place are you from?
+Bengaluru
+Hello! Alok How is the weather in Bengaluru ?
+What is your age?
+19
+Good to know you are 19  years old
+```
+
+### Variables v/s Literals:
+**Literals** are the constants that appear directly in the program and can be assigned to the variables.
+```
+print("Enter the radius of the circle:")
+rad = int(input())
+area = 3.14 * rad * rad
+print("The area of the circle with",rad,"is:",area)
+```
+>[!Note]
+>* area, rad are the variables here
+>* while 3.14 is the constant value used hence it is a literal

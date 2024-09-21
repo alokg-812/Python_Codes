@@ -257,3 +257,26 @@ True
 True
 False
 ```
+## Introduction To String:
+**String** is datatype that can store any type of existing data within itself.
+Ex:
+```
+a = '10'
+e = '10.0'
+c = 'True'
+p = 'a'
+s = 'Python is a very powerful language'
+```
+🌟 Here, the whole sentence written are strings only.
+
+>[!Note]
+>* **Only Operation allowed on string:** _Concatenation_
+Ex:
+```
+s = '123456789'
+a = s[0]
+b = s[6]
+print(a+b)
+```
+👉 When a non-programmer looks into this, they will say that a is storing 1 and b is storing 7 and hence the print statement would give the result as _1+7_ that is _8_.
+But, in reality both a and b are of string datatypes and hence they will concatenate and res would be _17_. 

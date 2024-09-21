@@ -280,3 +280,8 @@ print(a+b)
 ```
 👉 When a non-programmer looks into this, they will say that a is storing 1 and b is storing 7 and hence the print statement would give the result as _1+7_ that is _8_.
 But, in reality both a and b are of string datatypes and hence they will concatenate and res would be _17_. 
+
+
+
+iske aage slicing aur -ve indexing ka example karna hai with ex s = 'python' aur phir compare wala karna hai s= 'aab'>'aaa' will give false
+phir s.length() ka function

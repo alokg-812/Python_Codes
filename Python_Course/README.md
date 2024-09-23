@@ -282,6 +282,16 @@ print(a+b)
 But, in reality both a and b are of string datatypes and hence they will concatenate and res would be _17_. 
 
 
+### Slicing and Indexing in String(same would be applicable when learn about lists)
+```
+s = 'Python is a very powerful language'
+print(s[1:7]) # _'yhton '_
+print(s[-1:-4]) # _'egau'_
+```
 
-iske aage slicing aur -ve indexing ka example karna hai with ex s = 'python' aur phir compare wala karna hai s= 'aab'>'aaa' will give false
-phir s.length() ka function
+👉 **s.length()** gives us the number of string characters.
+
+#### String Comparision
+```
+s= 'aab'>'aaa' # _false_
+```

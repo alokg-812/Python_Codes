@@ -295,3 +295,19 @@ print(s[-1:-4]) # _'egau'_
 ```
 s= 'aab'>'aaa' # _false_
 ```
+
+
+_________________________________________________________________________________________________________________________
+# WEEK 2 
+
+### three words to keep remember:
+if, for & while
+
+👍 in a line, anything written after '#' is ignored and not used in the program, that is what we call _comments._
+
+⁜ Variables Revisited Dynamic Typing: integer ko float type bana deta jab bhi division/ floor division use ho.
+
+:: Some reserved words can't be used as variables, they are known as _keywords._
+like for, while, and ...
+
+**del(**variable_name**)**: is used to delete a certain variable.

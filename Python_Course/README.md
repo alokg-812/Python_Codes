@@ -1,3 +1,4 @@
+# WEEK 1:
 ## Why Programming???
 *Ans:* Language needed to be learnt to communicate with computer.
 
@@ -387,3 +388,94 @@ _____________________________________________________________________________
 
 # caeser cipher in cryptography
 ![image](https://github.com/user-attachments/assets/c47f909e-c82d-439b-b72d-214bf6d26cfe)
+
+____________________________
+## If Condition:
+The `if` statement is used to execute a block of code only if a specified condition is `True`. If the condition is `False`, the code within the `if` block will be skipped.
+
+Code Example:
+```python
+# Input age and current year
+age = int(input("Enter your age: "))
+current_year = 2024
+
+# Movie restriction based on age
+if age > 13:
+    print("Allowed to watch the movie.")
+else:
+    print("Not allowed to watch the movie.")
+```
+## if, else, else if(elif):
+
+Example:
+
+```python
+num = int(input("Enter a number: "))
+# Checking if the number is odd or even and ends with 0 or 5
+if num % 2 == 0:
+    print("The number is even.")
+else:
+    print("The number is odd.")
+if num % 10 == 0:
+    print("The number ends with 0.")
+elif num % 10 == 5:
+    print("The number ends with 5.")
+else:
+    print("The number does not end with 0 or 5.")
+```
+
+### Problem:
+![image](https://github.com/user-attachments/assets/a57cbc29-f56b-4cd8-8f6c-0f2e99cc036a)
+
+Solution:
+```python
+# Start of the process
+time = input("Enter travel time (longer/shorter): ").lower()
+price = input("Enter price (lower/higher): ").lower()
+
+# Determine travel time
+if time == "longer":
+    # Check price for longer travel
+    if price == "lower":
+        print("Travel by Coach")
+    elif price == "higher":
+        print("Travel by Train")
+elif time == "shorter":
+    # Check price for shorter travel
+    if price == "lower":
+        print("Travel by Red Eye Flight")
+    elif price == "higher":
+        print("Travel by Daytime Flight")
+
+# End of the process
+print("Arrive at City B")
+```
+
+## Importing Libraries
+
+* Using math functions:
+```python
+import math
+print(math.sqrt(100))        # Prints the square root of 100
+print(math.log(7))           # Prints the natural logarithm of 7
+print(math.factorial(10))    # Prints the factorial of 10
+print(math.pow(10, 3))       # Prints 10 raised to the power of 3 (10^3)
+```
+# Importing random library
+```python
+import random
+# Using random function to print a random number between 0 and 1
+print(random.random())  # Prints a random float number between 0 and 1
+
+# Simulating a coin toss game
+a = random.random()  # Generates a random float between 0 and 1
+if a > 0.5:
+    print("Heads")
+else:
+    print("Tails")
+
+# Simulating a dice roll
+# Generates a random integer between 1 and 6
+dice_roll = random.randint(1, 6)
+print("Dice rolled: {dice_roll}")
+```

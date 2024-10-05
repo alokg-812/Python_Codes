@@ -292,7 +292,7 @@ print(s[-1:-4]) # _'egau'_
 👉 **s.length()** gives us the number of string characters.
 
 #### String Comparision
-```
+```python
 s= 'aab'>'aaa' # _false_
 ```
 
@@ -303,11 +303,87 @@ ________________________________________________________________________________
 ### three words to keep remember:
 if, for & while
 
-👍 in a line, anything written after '#' is ignored and not used in the program, that is what we call _comments._
+> in a line, anything written after '#' is ignored and not used in the program, that is what we call _comments._
 
-⁜ Variables Revisited Dynamic Typing: integer ko float type bana deta jab bhi division/ floor division use ho.
+##### Variables Revisited Dynamic Typing: 
+integer ko float type bana deta jab bhi division/ floor division use ho.
 
-:: Some reserved words can't be used as variables, they are known as _keywords._
-like for, while, and ...
+##### Keywords:
+Some reserved words can't be used as variables, they are known as _keywords._
+like for, while, and, or, not and so on...
 
-**del(**variable_name**)**: is used to delete a certain variable.
+**del(variable_name)**: is used to delete a certain variable.
+```python
+x = 5
+print(x) # 5
+del(x)
+print(x) # variable does not exist
+```
+_________________________________________________________
+
+### Swapping numbers in Python:
+```python
+x, y = 1,3
+print(x,y) # 1 3
+x,y = y,x
+print(x,y) # 3 1
+```
+
+#### ShortHand Operator:
+``x = x+y <=> x+=y``
+___________________________________________________________________
+##### ``in`` keyword:
+👉used in search engine types things
+```python
+print('study' **in** 'I study in IIT Madras') # True
+print('India' **in** 'I study in IIT Madras') # False
+```
+______________________________________________________________
+#### Chaining Operator:
+* Using Multiple Relational operators in a single line
+```python
+x =5
+print(2<x<=10) # True
+```
+________________________________________________________________
+### Escape Characters:
+* Using ``'\x'`` where x represents different characters,
+```python
+print('It's beautiful day') # error
+print('It\'s beautiful day')   # It's beautiful day
+```
+|character|usage|
+|-|-|
+|\'|to differentiate between strings|
+|\"|to differentiate between strings|
+|\t|to add multiple spaces|
+|\n|to move cursor to the new line|
+_________________________________________________________________
+#### Types of Quotes in Python:
+|Quote|Usage|
+|-|-|
+|'...'| for string identification|
+|"..."| for string identification|
+|'''...'''| for multiple line strings or to define multiline comments|
+_____________________________________________________________________________
+
+### String Methods:
+|Method|Description|Code[x = 'pytHoN sTrIng mEthOdS']|Output|
+|-|-|-|-|
+| **islower** | Checks if all characters in the string are lowercase. | ```print(x.islower())``` | True/False |
+| **isupper** | Checks if all characters in the string are uppercase. | ```print(x.isupper())``` | True/False |
+| **istitle** | Checks if the string follows the title case. | ```print(x.istitle())``` | True/False |
+| **isdigit** | Checks if all characters in the string are digits. | ```print(x.isdigit())``` | True/False |
+| **isalpha** | Checks if all characters in the string are alphabetic. | ```print(x.isalpha())``` | True/False |
+| **isalnum** | Checks if all characters in the string are alphanumeric. | ```print(x.isalnum())``` | True/False |
+| **strip** | Removes leading and trailing whitespaces. | ```print(x.strip())``` | String with no leading/trailing spaces |
+| **lstrip** | Removes leading whitespaces. | ```print(x.lstrip())``` | String with no leading spaces |
+| **rstrip** | Removes trailing whitespaces. | ```print(x.rstrip())``` | String with no trailing spaces |
+| **startswith** | Checks if the string starts with a specified prefix. | ```print(x.startswith('prefix'))``` | True/False |
+| **endswith** | Checks if the string ends with a specified suffix. | ```print(x.endswith('suffix'))``` | True/False |
+| **count** | Counts occurrences of a substring in the string. | ```print(x.count('substring'))``` | Number of occurrences |
+| **index** | Finds the index of the first occurrence of a substring. | ```print(x.index('substring'))``` | Index position |
+| **replace** | Replaces a substring with another substring. | ```print(x.replace('old', 'new'))``` | Modified string |
+
+# caeser cipher in cryptography
+![image](https://github.com/user-attachments/assets/c47f909e-c82d-439b-b72d-214bf6d26cfe)

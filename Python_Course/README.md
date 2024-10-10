@@ -479,3 +479,36 @@ else:
 dice_roll = random.randint(1, 6)
 print("Dice rolled: {dice_roll}")
 ```
+
+## importing calendar library
+
+```python
+import calendar
+print(calendar.month(2021,3))  #calendar of march month of 2021
+print(calendar.calendar(2021))  # calendar of entire 2021
+```
+
+* Other way of importing inbuilt libraries:
+a. 
+```python
+from calendar import * 
+print(calendar(2024))  ## calendar of entire 2024
+```
+
+- if we are using only few eatures of a library, it is preferable to import only required files such as:
+```python
+from calendar import month
+print(month(2024,9)) # will give month of sept 2024 as the output
+print(calendar(2024)) # error as only month library has been imported
+```
+
+b.
+```python
+import calendar as c
+print(c.month(2024,10))
+
+from calendar import month as m
+print(m(2024,10))
+```
+_____________________________________
+# WEEK 3

@@ -512,3 +512,120 @@ print(m(2024,10))
 ```
 _____________________________________
 # WEEK 3
+
+```python
+print("When did India get its independence (year)?")
+year = int(input())
+
+if year == 1947:
+    print("Correct! India got its independence in 1947.")
+else:
+    print("Incorrect. Please try again.")
+    print("When did India get its independence (year)?")
+    year = int(input())
+
+    if year == 1947:
+        print("Correct! India got its independence in 1947.")
+    else:
+        print("Incorrect. Last chance!")
+        print("When did India get its independence (year)?")
+        year = int(input())
+
+        if year == 1947:
+            print("Correct! India got its independence in 1947.")
+        else:
+            print("Incorrect. The correct answer is 1947.")
+```
+
+* We can shorten this repeatedness of the code using `while` loop
+```python
+print("When did India get its independence (year)?")
+year = int(input())
+
+# I would like to write a piece of code, which lets the 
+# user attempt as many times as he wants.
+# The code will end, only when it gets the right answer.
+
+while(year != 1947):
+    print("You got this wrong. Enter once again.")
+    year = int(input())
+```
+
+* Computing factorial using while loop-
+```python
+# Input from the user
+n = int(input("Enter a number to compute its factorial: "))
+
+# Initialize factorial variable
+factorial = 1
+i = 1
+
+# Use a while loop to compute the factorial
+while i <= n:
+    factorial *= i
+    i += 1
+
+# Output the result
+print("The factorial of " + str(n) + " is " +factorial)
+```
+
+**TUTORIAL QUESTIONS:**
+1. WAPC to compute the factorial of a given input
+2. WAPC to count the number of digits in a given input
+3. WAPC to reverse the number in the given input
+4. WAPC to validate a given number is palindrome or not
+```python
+# Input from the user
+n = int(input("Enter a number for all operations: "))
+
+# Factorial computation
+factorial = 1
+i = 1
+while i <= n:
+    factorial *= i
+    i += 1
+print("The factorial of " + str(n) + " is " + str(factorial))
+
+# Digit count
+count = 0
+temp = n
+while temp != 0:
+    temp //= 10
+    count += 1
+print("The number " + str(n) + " has " + str(count) + " digits.")
+
+# Reverse the number
+reversed_num = 0
+temp = n
+while temp != 0:
+    digit = temp % 10
+    reversed_num = reversed_num * 10 + digit
+    temp //= 10
+print("The reverse of " + str(n) + " is " + str(reversed_num) + ".")
+
+# Palindrome check
+if n == reversed_num:
+    print("The number " + str(n) + " is a palindrome.")
+else:
+    print("The number " + str(n) + " is not a palindrome.")
+```
+
+## for loop
+```python
+print("Hello World")
+print("Hello World")
+print("Hello World")
+print("Hello World")
+print("Hello World")
+print("Hello World")
+print("Hello World")
+print("Hello World")
+print("Hello World")
+print("Hello World")
+
+# This can also be written as
+
+for i in range(10):
+  print("Hello World")
+```
+

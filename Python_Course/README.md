@@ -609,7 +609,7 @@ if n == reversed_num:
 else:
     print("The number " + str(n) + " is not a palindrome.")
 ```
-
+______________
 ## for loop
 ```python
 print("Hello World")
@@ -629,3 +629,47 @@ for i in range(10):
   print("Hello World")
 ```
 
+* Example: Manually Adding Numbers from 0 to 9
+* Manually, 0 + 1 + 2 + ... + 9 = 45
+```python
+# Using a For Loop to Add Numbers
+sum = 0
+for i in range(10):
+    sum += i
+print("Sum of numbers from 0 to 9 is:", sum)
+```
+- Explanation:
+- The loop iterates through numbers 0 to 9.
+- During each iteration, the current number 'i' is added to 'sum'.
+
+👉 Understanding range(x, y):
+> The range(x, y) function generates a sequence of numbers from x (inclusive) to y (exclusive).
+
+```python
+# Example: Multiplication Table of 2
+for i in range(1, 11):
+    print("2 *", i, "=", 2 * i)
+```
+* Output:
+* ![image](https://github.com/user-attachments/assets/147193de-c13c-49d4-8f87-4a81e0ef045b)
+
+
+### For Loop Structure:
+
+A for loop typically has 3 parts:
+1. Initialization (e.g., i = 0)
+2. Condition (e.g., i < 10)
+3. Update (e.g., i += 1)
+
+👉 Formatted Printing
+```python
+# Example 1: Using 'end' parameter
+for i in range(1, 6):
+    print(i, end=' ')  # prints: 1 2 3 4 5
+```
+```python
+# Example 2: Using 'sep' parameter
+d, m, y = 16, 10, 2024
+print("Today's date is", end=' ')
+print(d, m, y, sep='-')  # prints: Today's date is 16-10-2024
+```

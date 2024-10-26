@@ -673,3 +673,12 @@ d, m, y = 16, 10, 2024
 print("Today's date is", end=' ')
 print(d, m, y, sep='-')  # prints: Today's date is 16-10-2024
 ```
+___________
+# WEEK 4
+
+## Basic list operations for practice
+my_list = [3, 5, 7, 9]
+print("List:", my_list)
+print("First element:", my_list[0])
+my_list.append(11)
+print("Appended List:", my_list)

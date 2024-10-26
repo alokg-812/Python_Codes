@@ -677,8 +677,11 @@ ___________
 # WEEK 4
 
 ## Basic list operations for practice
+
+```python
 my_list = [3, 5, 7, 9]
 print("List:", my_list)
 print("First element:", my_list[0])
 my_list.append(11)
 print("Appended List:", my_list)
+```

@@ -674,14 +674,126 @@ print("Today's date is", end=' ')
 print(d, m, y, sep='-')  # prints: Today's date is 16-10-2024
 ```
 ___________
-# WEEK 4
+# Week 4: Lists, Sets, Tuples, and Functions  
 
-## Basic list operations for practice
+## **1. Lists**  
 
+### **What are Lists?**  
+A list is a collection of ordered elements in Python. Unlike arrays in many programming languages, lists can contain elements of different types (e.g., integers, strings, or even other lists).  
+
+### **Why are Lists Needed?**  
+In programming, we often deal with collections of data. For example, you may want to store the names of students in a class or temperatures recorded over a week. Lists provide a flexible way to store and manipulate such data.  
+
+### **Small Code Example**  
 ```python
-my_list = [3, 5, 7, 9]
-print("List:", my_list)
-print("First element:", my_list[0])
-my_list.append(11)
-print("Appended List:", my_list)
+# Creating a list
+fruits = ["apple", "banana", "cherry"]
+
+# Accessing elements
+print(fruits[0])  # Output: apple
+
+# Adding an element
+fruits.append("date")
+print(fruits)  # Output: ['apple', 'banana', 'cherry', 'date']
+
+# Using lists for multiple operations
+numbers = [10, 20, 30, 40]
+
+# Insert at specific position
+numbers.insert(2, 25)  # Adds 25 at index 2
+print(numbers)  # Output: [10, 20, 25, 30, 40]
+
+# Removing elements
+numbers.remove(25)
+print(numbers)  # Output: [10, 20, 30, 40]
+
+# List slicing
+sublist = numbers[1:3]
+print(sublist)  # Output: [20, 30]
 ```
+## More on Lists
+
+**Qs:** What is "More on Lists"?
+**Ans:** After understanding the basics, we dive deeper into advanced list operations like slicing, comprehensions, and using built-in methods.
+
+**Qs:** Why is it Important?
+**Ans:** Advanced list operations are crucial for handling and transforming large datasets efficiently. Tasks like filtering, mapping, or combining lists become easier and more intuitive.
+_Ex:_
+```python
+# Slicing lists
+numbers = [10, 20, 30, 40, 50]
+print(numbers[1:4])  # Output: [20, 30, 40]
+
+# Reversing a list
+reversed_numbers = numbers[::-1]
+print(reversed_numbers)  # Output: [50, 40, 30, 20, 10]
+```
+
+_Ex:_
+```python
+# Combining two lists
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+combined = list1 + list2
+print(combined)  # Output: [1, 2, 3, 4, 5, 6]
+
+# Filtering using list comprehensions
+filtered = [x for x in combined if x % 2 == 0]
+print(filtered)  # Output: [2, 4, 6]
+
+# Nested lists
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(matrix[1][2])  # Output: 6
+```
+<br>
+## Sets
+**Qs:** What are `sets`?
+**Ans:** A set is an unordered collection of unique elements in Python. Sets do not allow duplicate values, making them useful for filtering out redundant data.
+
+**Qs:** Why are sets even needed?
+**Ans:** In many real-world scenarios, sometimes we need to ensure that data contains only unique elements. For example, you might want to store a list of unique email IDs or eliminate duplicates from a dataset. Sets make such tasks straightforward.
+_Ex:_
+```python# Creating a set
+unique_numbers = {1, 2, 3, 3, 4}
+
+# Notice duplicates are removed
+print(unique_numbers)  # Output: {1, 2, 3, 4}
+
+# Adding an element
+unique_numbers.add(5)
+print(unique_numbers)  # Output: {1, 2, 3, 4, 5}
+```
+_Ex:_
+```python
+unique_numbers = {1, 2, 3, 3, 4}
+
+# Notice duplicates are removed
+print(unique_numbers)  # Output: {1, 2, 3, 4}
+
+# Adding an element
+unique_numbers.add(5)
+print(unique_numbers)  # Output: {1, 2, 3, 4, 5}
+```
+<br>
+# Week 5: Dictionaries, Collections, and Functions  
+
+## **1. Dictionaries**  
+
+### **What are Dictionaries?**  
+A dictionary in Python is an unordered collection of key-value pairs. Keys are unique, and values can be of any data type.  
+
+### **Why are Dictionaries Needed?**  
+Dictionaries are useful when you need to associate data (values) with unique identifiers (keys). For example, you can store student records with roll numbers as keys and names or scores as values.  
+
+### **Small Code Example**  
+```python
+# Creating a dictionary
+student_scores = {"Alice": 85, "Bob": 90, "Charlie": 78}
+
+# Accessing values
+print(student_scores["Alice"])  # Output: 85
+
+# Adding a new key-value pair
+student_scores["David"] = 92
+print(student_scores)  # Output: {'Alice': 85, 'Bob': 90, 'Charlie': 78, 'David': 92}
+

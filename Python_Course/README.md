@@ -796,4 +796,8 @@ print(student_scores["Alice"])  # Output: 85
 # Adding a new key-value pair
 student_scores["David"] = 92
 print(student_scores)  # Output: {'Alice': 85, 'Bob': 90, 'Charlie': 78, 'David': 92}
+```
+# Collections Summary:
+![image](https://github.com/user-attachments/assets/48591a79-fe5d-4a88-9ab6-a297a59b5963)
 
+![image](https://github.com/user-attachments/assets/078cbca2-6553-40eb-a272-3c85a27c7bc9)

@@ -6,12 +6,9 @@
 
 ## **Timeline: 24 Nov 2025 → 28 Feb 2026**
 
----
-
 # 1. Problem Statement
 
 College campuses face fragmented information and inefficient workflows. Students frequently miss updates, struggle with manual tasks, and lack a unified digital system for everyday campus needs. Key issues include:
-
 * Mess menu shown only on notice boards
 * Missed club events and academic deadlines
 * No consolidated class timetable
@@ -21,52 +18,39 @@ College campuses face fragmented information and inefficient workflows. Students
 
 This leads to confusion, missed opportunities, and reduced campus engagement.
 
----
-
 # 2. Proposed Solution
 
 **CampusCompanion** will be a unified **mobile + web platform** designed to centralize all essential student services.
 
 ### The platform will provide:
-
-* ✔ Daily mess menu updates
-* ✔ Class schedule with alerts
-* ✔ Hostel complaint system with tracking
-* ✔ Study resources repository
-* ✔ Events & club updates
-* ✔ Lost-and-found board
-* ✔ Bus/shuttle live tracking (optional)
-* ✔ QR attendance feature (optional)
+* Daily mess menu updates
+* Class schedule with alerts
+* Hostel complaint system with tracking
+* Study resources repository
+* Events & club updates
+* Lost-and-found board
+* Bus/shuttle live tracking (optional)
 
 ### Access Points:
-
-* **Student Mobile App** (primary interface)
+* **Student Mobile App**
 * **Admin & Faculty Web Dashboard**
-
----
 
 # 3. Objectives and Expected Outcomes
 
-### 🎯 **Objectives**
-
+### **Objectives**
 * Digitize and simplify routine student life operations
 * Serve as a one-stop platform for all campus interactions
 * Improve student–admin communication and transparency
 * Provide real-time updates and actionable information
 
-### 📈 **Expected Outcomes**
-
+### **Expected Outcomes**
 * 30–40% improvement in communication efficiency
 * Reduced manual workload for hostel wardens/admins
 * Better student satisfaction and campus engagement
 * Push notification–based updates for time-sensitive alerts
 * Centralized repository for academic notes and resources
 
----
-
 # 4. Tools, Technologies, and Frameworks
-
-You may choose from any tech stack below depending on team strengths.
 
 ### **MERN Stack**
 
@@ -81,10 +65,7 @@ You may choose from any tech stack below depending on team strengths.
 * GitHub (Version control)
 * Firebase Cloud Messaging / OneSignal (Push notifications)
 
----
-
 # 5. Tentative Milestones & Timeline
-
 **Project Duration: 14 weeks (24 Nov 2025 → 28 Feb 2026)**
 
 | Week | Timeline        | Task/Milestone                            |
@@ -98,13 +79,11 @@ You may choose from any tech stack below depending on team strengths.
 | 7    | 5 Jan – 11 Jan  | Events & Clubs Module                     |
 | 8    | 12 Jan – 18 Jan | Study Resources Hub + File Uploads        |
 | 9    | 19 Jan – 25 Jan | Lost & Found Module                       |
-| 10   | 26 Jan – 1 Feb  | Bus Tracking (Optional) + QR Attendance   |
+| 10   | 26 Jan – 1 Feb  | Bus Tracking (Optional)                   |
 | 11   | 2 Feb – 8 Feb   | Integration + Debugging                   |
 | 12   | 9 Feb – 15 Feb  | System Testing + Bug Fixes                |
 | 13   | 16 Feb – 22 Feb | UI Polish + Admin Panel Finalization      |
 | 14   | 23 Feb – 28 Feb | Deployment + Final Demo Preparation       |
-
----
 
 # 6. Wireframes (Low‑Fidelity)
 
@@ -146,7 +125,7 @@ You may choose from any tech stack below depending on team strengths.
 | Complaints Dashboard                               |
  ---------------------------------------------------
 | Ticket# | Student | Issue  | Status  | Action      |
-| 1021    | Alok    | Wifi   | Raised  | [Assign]    |
+| 1021    | Ram     | Wifi   | Raised  | [Assign]    |
 | 1022    | Rohan   | Fan    | Pending | [Resolve]   |
  ---------------------------------------------------
 ```
@@ -165,21 +144,18 @@ You may choose from any tech stack below depending on team strengths.
  -----------------------------------
 ```
 
----
-
 # 7. Final Deliverables
 
-* PRD + Wireframes (this document)
+* PRD (this document)
 * UI/UX screens (Figma)
 * API Contract + Database Schema
 * Production-ready App + Web Dashboard
 * Deployment on cloud (Render / Vercel / Firebase / AWS)
-* Final Demo: 28 Feb 2026
+* Final Demo & Presentation: 28 Feb 2026
 
----
 
 # 8. Approval & Sign‑off & Team
 
 - **Prepared by:** Alok Gupta (Team Lead)
-- **Team Members:** Akanksha Priyadarshini Rath, Divyanshu Gupta
-- **Approval Date:** To be finalized
+- **Team Members:** Akanksha Priyadarshinee Rath, Divyanshu Gupta, Rohit Singh
+- **Approval Date:** To be finalized by the mentor
